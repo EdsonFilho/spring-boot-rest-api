@@ -1,6 +1,9 @@
 package br.com.eacf.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class Customer {
@@ -10,7 +13,8 @@ public class Customer {
     private Long  id;
     private String name;
     private String gender;
-    private String birthdate;
+    @JsonFormat(pattern="MM/dd/yyyy")
+    private Date birthdate;
     private String age;
 
     @ManyToOne
@@ -40,11 +44,11 @@ public class Customer {
         this.id = id;
     }
 
-    public String getBirthdate() {
+    public Date getBirthdate() {
         return birthdate;
     }
 
-    public void setBirthdate(String birthdate) {
+    public void setBirthdate(Date birthdate) {
         this.birthdate = birthdate;
     }
 

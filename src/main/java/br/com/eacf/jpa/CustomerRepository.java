@@ -1,6 +1,5 @@
 package br.com.eacf.jpa;
 
-import br.com.eacf.entity.City;
 import br.com.eacf.entity.Customer;
 import org.springframework.data.repository.CrudRepository;
 

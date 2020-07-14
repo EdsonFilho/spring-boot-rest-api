@@ -1,6 +1,5 @@
 package br.com.eacf.endpoint;
 
-import br.com.eacf.entity.City;
 import br.com.eacf.entity.Customer;
 import br.com.eacf.exception.ResourceNotFoundException;
 import br.com.eacf.service.CustomerService;

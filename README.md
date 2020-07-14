@@ -1,5 +1,42 @@
 # csv-to-rest-reader
-This application provides a REST API endpoint.
+This application provides a REST API endpoint for City and Customer.
+
+The actions supported are:
+* Include city
+* Include customer
+* Find city by name
+* Find city by state
+* Find customer by name
+* Find city by id
+* Delete customer
+* Update customer
+
+The City entity contains two attributes: name and state, both are strings.
+
+<code>
+{
+    "id": 2,
+    "name": "cidade",
+    "state": "SC"
+}
+</code>
+
+The Customer entity contains five attributes: name, gender, birthdate, age and city.
+
+<code>
+{
+    "id": 3, 
+    "name": "ReNamed Customer",
+    "gender": "M",
+    "birthdate": "12/25/2020",
+    "age": "10",
+    "city": {
+        "id": 1,
+        "name": "cidade",
+        "state": "SC"
+    }
+}
+</code>
 
 ## Cloning
 To clone the application run the following command:
